@@ -23,7 +23,7 @@ const Title: StorefrontFunctionComponent<TTitleProps> = ({ title }) => {
 }
 
 Title.schema = {
-    title: 'Countdown title',
+    title: 'countdown.title',
     description: 'editor.countdown.description',
     type: 'object',
     properties: {
