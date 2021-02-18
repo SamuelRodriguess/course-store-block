@@ -27,7 +27,6 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = () => {
     ssr: false
   })
   
-
   const [timeRemaining, setTime] = useState<TimeSplit>({
     hours: '00',
     minutes: '00',
@@ -57,7 +56,6 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = () => {
   }
 
   tick(data?.product?.releaseDate ||  DEFAULT_TARGET_DATE, setTime)
-  console.log('d',data)
 
   return (
     <div className={`${handles.countdown} c-muted-1 db tc`}>
